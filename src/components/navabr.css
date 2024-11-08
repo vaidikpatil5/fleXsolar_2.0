@@ -1,0 +1,67 @@
+/* 
+nav img{
+    width: 7em;
+    margin: 1em;
+}
+
+nav {
+    background: rgba(53, 53, 53, 0.162);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.218);
+    backdrop-filter: blur(8.6px);
+    -webkit-backdrop-filter: blur(8.6px);
+    border: 1.5px solid rgba(0, 255, 178, 0.3);
+}
+ */
+
+.floating-navbar {
+   
+    width: 90%; 
+    position: fixed;
+    top: 20px; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px); /* Glass effect */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border */
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.floating-navbar:hover {
+    backdrop-filter: blur(15px); /* Slightly increase the blur on hover */
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3); /* More intense shadow */
+}
+
+.floating-navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.floating-navbar li {
+    margin: 0 15px;
+}
+
+.floating-navbar a {
+    text-decoration: none;
+    color: white; /* Adjust color as needed */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.floating-navbar a:hover {
+    color: #ffeb3b; /* Change color on hover */
+}
+
+
+
+
